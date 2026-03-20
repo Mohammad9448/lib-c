@@ -5,13 +5,13 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.Mohammad9448</groupId>
+    <groupId>io.github.mohammad9448</groupId>
     <artifactId>lib-c</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <name>lib-c</name>
     <description>Minimal test library lib-c</description>
-    <url>https://github.com/Mohammad9448/lib-c</url>
+    <url>https://github.com/mohammad9448/lib-c</url>
 
     <licenses>
         <license>
@@ -22,27 +22,27 @@
 
     <developers>
         <developer>
-            <id>Mohammad9448</id>
+            <id>mohammad9448</id>
             <name>Mohammad Saker</name>
         </developer>
     </developers>
 
     <scm>
-        <connection>scm:git:https://github.com/Mohammad9448/lib-c.git</connection>
-        <developerConnection>scm:git:https://github.com/Mohammad9448/lib-c.git</developerConnection>
-        <url>https://github.com/Mohammad9448/lib-c</url>
+        <connection>scm:git:https://github.com/mohammad9448/lib-c.git</connection>
+        <developerConnection>scm:git:https://github.com/mohammad9448/lib-c.git</developerConnection>
+        <url>https://github.com/mohammad9448/lib-c</url>
     </scm>
 
     <dependencies>
         
         <dependency>
-            <groupId>io.github.Mohammad9448</groupId>
+            <groupId>io.github.mohammad9448</groupId>
             <artifactId>lib-a</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         
         <dependency>
-            <groupId>io.github.Mohammad9448</groupId>
+            <groupId>io.github.mohammad9448</groupId>
             <artifactId>lib-b</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>

@@ -1,4 +1,4 @@
-package io.github.Mohammad9448;
+package io.github.mohammad9448;
 
 public class Dummy {
     public static String name() {
