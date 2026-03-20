@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.Mohammad9448.pipeline.test</groupId>
+    <artifactId>lib-c</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <name>lib-c</name>
+    <description>Minimal test library lib-c</description>
+    <url>https://github.com/Mohammad9448/lib-c</url>
+
+    <licenses>
+        <license>
+            <name>Apache License 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>Mohammad9448</id>
+            <name>Mohammad Saker</name>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/Mohammad9448/lib-c.git</connection>
+        <developerConnection>scm:git:ssh://github.com/Mohammad9448/lib-c.git</developerConnection>
+        <url>https://github.com/Mohammad9448/lib-c</url>
+    </scm>
+
+    <dependencies>
+        
+        <dependency>
+            <groupId>io.github.Mohammad9448.pipeline.test</groupId>
+            <artifactId>lib-a</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>io.github.Mohammad9448.pipeline.test</groupId>
+            <artifactId>lib-b</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        
+    </dependencies>
+
+</project>
