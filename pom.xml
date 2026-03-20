@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.Mohammad9448.pipeline.test</groupId>
+    <groupId>io.github.Mohammad9448</groupId>
     <artifactId>lib-c</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
@@ -28,25 +28,93 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/Mohammad9448/lib-c.git</connection>
-        <developerConnection>scm:git:ssh://github.com/Mohammad9448/lib-c.git</developerConnection>
+        <connection>scm:git:https://github.com/Mohammad9448/lib-c.git</connection>
+        <developerConnection>scm:git:https://github.com/Mohammad9448/lib-c.git</developerConnection>
         <url>https://github.com/Mohammad9448/lib-c</url>
     </scm>
 
     <dependencies>
         
         <dependency>
-            <groupId>io.github.Mohammad9448.pipeline.test</groupId>
+            <groupId>io.github.Mohammad9448</groupId>
             <artifactId>lib-a</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         
         <dependency>
-            <groupId>io.github.Mohammad9448.pipeline.test</groupId>
+            <groupId>io.github.Mohammad9448</groupId>
             <artifactId>lib-b</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         
     </dependencies>
+  <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <release>17</release>
+                </configuration>
+            </plugin>
+                      <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.3.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.6.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <failOnError>false</failOnError>
+                    <source>${java.version}</source>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <skip>${maven.gpg.skip}</skip>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.7.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>central</publishingServerId>
+                </configuration>
+            </plugin>
 
+        </plugins>
+    </build>
 </project>
