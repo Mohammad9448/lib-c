@@ -42,7 +42,7 @@
         <dependency>
             <groupId>io.github.mohammad9448</groupId>
             <artifactId>lib-b</artifactId>
-            <version>0.0.5</version>
+            <version>0.0.6</version>
         </dependency>
         
     </dependencies>
